@@ -16,10 +16,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Route::group(['controller' => AuthController::class], function () {
     Route::get('/login', 'login')->name('login');
     Route::post('/login', 'authenticate')->name('authenticate');
@@ -27,6 +23,7 @@ Route::group(['controller' => AuthController::class], function () {
 });
 
 Route::group(['controller' => ProcessesController::class], function () {
+    Route::get('/', 'home')->name('home');
     Route::get('/processos', 'index')->name('processes.index');
     Route::get('/processos/criar', 'create')->name('processes.create');
     Route::post('/processos', 'store')->name('processes.store');

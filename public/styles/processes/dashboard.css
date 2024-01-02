@@ -255,6 +255,10 @@
         padding: 1rem;
     }
 
+    .alert-success {
+        font-size: 0.7rem;
+    }
+
     .container-processes {
         grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
     }

@@ -22,7 +22,6 @@ class ProcessEditRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'protocol' => 'required|numeric|unique:processes',
             'title' => 'required|string',
             'description' => 'nullable|string',
             'location' => 'nullable|string',

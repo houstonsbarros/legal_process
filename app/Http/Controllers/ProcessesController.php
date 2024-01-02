@@ -10,6 +10,63 @@ use Illuminate\Http\Request;
 
 class ProcessesController extends Controller
 {
+    public function home()
+    {
+        $processes = Process::where('status', 'closed')->get();
+
+        foreach ($processes as $process) {
+            switch ($process->status) {
+                case 'open':
+                    $process->status = 'Aberto';
+                    break;
+                case 'processing':
+                    $process->status = 'Em trâmite';
+                    break;
+                case 'closed':
+                    $process->status = 'Fechado';
+                    break;
+            }
+
+            switch ($process->type) {
+                case 'civil':
+                    $process->type = 'Cível';
+                    break;
+                case 'criminal':
+                    $process->type = 'Criminal';
+                    break;
+                case 'labor':
+                    $process->type = 'Trabalhista';
+                    break;
+                case 'family':
+                    $process->type = 'Família';
+                    break;
+                case 'tributary':
+                    $process->type = 'Tributário';
+                    break;
+                case 'consumer':
+                    $process->type = 'Consumidor';
+                    break;
+                case 'administrative':
+                    $process->type = 'Administrativo';
+                    break;
+                case 'environmental':
+                    $process->type = 'Ambiental';
+                    break;
+                case 'intellectual_property':
+                    $process->type = 'Propriedade intelectual';
+                    break;
+                case 'digital':
+                    $process->type = 'Digital';
+                    break;
+                case 'other':
+                    $process->type = 'Outro';
+                    break;
+            }
+        }
+        return view('welcome', [
+            'processes' => $processes,
+        ]);
+    }
     /**
      * Função que lista todos os processos.
      */

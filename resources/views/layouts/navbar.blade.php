@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link rel="stylesheet" href="/styles/app.css">
+    <link rel="stylesheet" href="/styles/processes/dashboard.css">
     <link rel="icon" href="/favicon.svg">
 
     @yield('stylesheets')
@@ -40,10 +41,6 @@
 
         .navbar_logo img {
             width: 10rem;
-        }
-
-        .navbar_logo img {
-            height: 2rem;
         }
 
         .navbar_links {
@@ -82,6 +79,29 @@
             background-color: #002341;
             color: #FFF;
             border: 1px solid #002341;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 0 2rem;
+            }
+
+            .navbar_logo img {
+                width: 7rem;
+            }
+
+            .navbar_logo img {
+                height: 1.5rem;
+            }
+
+            .navbar_links {
+                display: none;
+            }
+
+            .user_links a {
+                padding: 0.5rem 0.8rem;
+                font-size: 0.8rem;
+            }
         }
     </style>
 </body>
