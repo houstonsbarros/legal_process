@@ -28,4 +28,11 @@ Route::group(['controller' => AuthController::class], function () {
 
 Route::group(['controller' => ProcessesController::class], function () {
     Route::get('/processos', 'index')->name('processes.index');
+    Route::get('/processos/criar', 'create')->name('processes.create');
+    Route::post('/processos', 'store')->name('processes.store');
+    Route::get('/processos/{process}', 'show')->name('processes.show');
+    Route::get('/processos/{process}/editar', 'edit')->name('processes.edit');
+    Route::put('/processos/{process}', 'update')->name('processes.update');
+    Route::delete('/processos/{process}', 'destroy')->name('processes.destroy');
+    Route::get('/processos/{process}/finalizar', 'finish')->name('processes.finish');
 });

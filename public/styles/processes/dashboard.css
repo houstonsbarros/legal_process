@@ -1,0 +1,333 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.wrapper {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    border: 1px solid #ddd;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+}
+
+.container-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.header-title h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #002341;
+}
+
+.header-title p {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #002341;
+}
+
+.container-title a {
+    background-color: #002341;
+    color: #fff;
+    padding: 0.8rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.container-title a:hover {
+    background-color: #E2AD68;
+    cursor: pointer;
+}
+
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+.container-processes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19.7rem, 1fr));
+    grid-gap: 2rem;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 2rem;
+}
+
+.empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.empty h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #002341;
+    margin-bottom: 1rem;
+}
+
+.empty p {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #002341;
+    margin-bottom: 1rem;
+}
+
+.process {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    border: 1px solid #ddd;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+}
+
+.process-number {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #002341;
+}
+
+.process-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #002341;
+    margin-bottom: 0.5rem;
+}
+
+.process-description {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #585858;
+    margin-bottom: 0.5rem;
+    height: 3rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.footer-process {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.location,
+.type {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.location svg,
+.type svg {
+    width: 0.8rem;
+    height: 0.8rem;
+    margin-right: 0.3rem;
+    fill: #002341;
+    stroke: #002341;
+}
+
+.process-location,
+.process-type {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #002341;
+}
+
+.process-status {
+    background-color: #E2AD68;
+    color: #fff;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.process-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+    width: 100%;
+    height: fit-content;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.process-actions a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: #002341;
+    border: 1px solid #ddd;
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    height: fit-content;
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.process-actions a:hover {
+    background-color: #E2AD68;
+    color: #fff;
+    border: 1px solid #E2AD68;
+    cursor: pointer;
+}
+
+.process-actions form {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.process-actions button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: #002341;
+    border: 1px solid #ddd;
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    height: fit-content;
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.process-actions button:hover {
+    background-color: #E2AD68;
+    color: #fff;
+    border: 1px solid #E2AD68;
+}
+
+@media (max-width: 768px) {
+    .container-processes {
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .wrapper {
+        padding: 1rem;
+    }
+
+    .container-processes {
+        grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    }
+
+    .process {
+        padding: 0.5rem;
+    }
+
+    .process-number {
+        font-size: 0.7rem;
+    }
+
+    .process-title {
+        font-size: 0.8rem;
+    }
+
+    .process-description {
+        font-size: 0.7rem;
+    }
+
+    .footer-process {
+        gap: 1rem;
+    }
+
+    .process-location,
+    .process-type {
+        font-size: 0.7rem;
+    }
+
+    .process-actions a {
+        font-size: 0.7rem;
+    }
+
+    .process-actions button {
+        font-size: 0.7rem;
+    }
+
+    .container-title {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-title {
+        margin-bottom: 1rem;
+    }
+
+    .header-title h2 {
+        font-size: 1.2rem;
+    }
+
+    .header-title p {
+        font-size: 0.7rem;
+    }
+
+    .container-title a {
+        font-size: 0.7rem;
+    }
+
+    .process-actions {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .process-actions form {
+        width: 100%;
+    }
+
+    .process-actions button {
+        width: 100%;
+    }
+
+    .process-actions a {
+        width: 100%;
+    }
+}

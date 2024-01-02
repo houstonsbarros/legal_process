@@ -9,7 +9,7 @@
 
 .content {
     min-width: fit-content;
-    width: 50rem;
+    width: 60%;
     height: 30rem;
 
     background-color: #fff;
@@ -148,4 +148,44 @@ input:-webkit-autofill {
     color: #721c24;
     text-decoration: none;
     font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .content {
+        width: 80%;
+        height: fit-content;
+        padding: 3rem 1rem;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .logo img {
+        width: 12rem;
+    }
+
+    .input-group input {
+        height: 2.5rem;
+    }
+
+    .input-group button {
+        height: 2.5rem;
+    }
+
+    .not-have {
+        font-size: 0.7rem;
+    }
+
+    .not-have a {
+        font-size: 0.7rem;
+    }
+
+    .alert {
+        font-size: 0.7rem;
+    }
+
+    .alert ul li a {
+        font-size: 0.7rem;
+    }
 }

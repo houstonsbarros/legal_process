@@ -20,12 +20,6 @@
             <img src="/logo.svg" alt="Logo">
         </div>
 
-        <div class="navbar_links">
-            <a>Início</a>
-            <a>Seus Processos</a>
-            <a>Histórico</a>
-        </div>
-
         <div class="user_links">
             <a href="{{ route('logout') }}">Sair</a>
         </div>
@@ -41,10 +35,7 @@
             padding: 0 4rem;
             height: 4rem;
             background-color: #fff;
-            box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
-            position: sticky;
-            top: 0;
-            z-index: 99;
+            border-bottom: 1px solid #ddd;
         }
 
         .navbar_logo img {
@@ -81,7 +72,7 @@
             font-weight: 500;
             background-color: #FFF;
             color: #002341;
-            border: 1px solid #002341;
+            border: 1px solid #ddd;
             padding: 0.6rem 2rem;
             border-radius: 0.5rem;
             transition: all 0.2s ease-in-out;
@@ -90,6 +81,7 @@
         .user_links a:hover {
             background-color: #002341;
             color: #FFF;
+            border: 1px solid #002341;
         }
     </style>
 </body>

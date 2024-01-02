@@ -15,7 +15,9 @@ class Process extends Model
         'description',
         'location',
         'type',
-        'status'
+        'status',
+        'judge_id',
+        'lawyer_id',
     ];
 
     public function judge(): BelongsTo

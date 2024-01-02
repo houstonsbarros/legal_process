@@ -1,0 +1,153 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.wrapper {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    border: 1px solid #ddd;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+}
+
+.process-details-header {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.process-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #002341;
+}
+
+.process-subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #002341;
+}
+
+.process-details-body {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+    gap: 5rem;
+}
+
+.process-details-body-left {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+}
+
+.process-details-body-left-item {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+
+.process-details-body-left-item-title {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #002341;
+}
+
+.process-details-body-left-item-text {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #002341;
+}
+
+.process-details-body-right {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+}
+
+.process-details-body-right-item {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+
+.process-details-body-right-item-title {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #002341;
+}
+
+.process-details-body-right-item-text {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #002341;
+}
+
+.process-details-footer {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.process-details-edit-button {
+    background-color: #002341;
+    color: #fff;
+    padding: 0.7rem 1rem;
+    border-radius: 0.5rem;
+    height: fit-content;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.process-details-edit-button:hover {
+    background-color: #001529;
+    cursor: pointer;
+}
+
+.process-details-back-button {
+    background-color: #fff;
+    color: #002341;
+    border: 1px solid #ddd;
+    padding: 0.7rem 1rem;
+    border-radius: 0.5rem;
+    height: fit-content;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.process-details-back-button:hover {
+    background-color: #E2AD68;
+    color: #fff;
+    border: 1px solid #E2AD68;
+    cursor: pointer;
+}

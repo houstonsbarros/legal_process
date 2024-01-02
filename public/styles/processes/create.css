@@ -1,0 +1,167 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.wrapper {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    border: 1px solid #ddd;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+}
+
+.header-title {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.header-title h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #002341;
+}
+
+.header-title p {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #002341;
+}
+
+.process-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.process-form .form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.process-form input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ddd;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #002341;
+    outline: none;
+}
+
+.process-form textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ddd;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #002341;
+    resize: none;
+    outline: none;
+}
+
+.process-form select {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ddd;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #002341;
+    outline: none;
+}
+
+.process-form label {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #002341;
+    margin-bottom: 0.5rem;
+}
+
+.process-form input:hover,
+.process-form textarea:hover,
+.process-form select:hover {
+    transition: all 0.2s ease-in-out;
+    border: 1px solid #002341;
+}
+
+.process-form input:focus,
+.process-form textarea:focus,
+.process-form select:focus {
+    transition: all 0.2s ease-in-out;
+    border: 1px solid #002341;
+}
+
+
+.process-form button {
+    width: 10rem;
+    padding: 0.8rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #002341;
+    outline: none;
+    cursor: pointer;
+}
+
+.process-form button:hover {
+    background-color: #001529;
+}
+
+.button-group a {
+    background-color: #fff;
+    color: #002341;
+    border: 1px solid #ddd;
+    padding: 0.7rem 1rem;
+    border-radius: 0.5rem;
+    height: fit-content;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.button-group a:hover {
+    background-color: #E2AD68;
+    color: #fff;
+    border: 1px solid #E2AD68;
+}
+
+.button-group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+@media (max-width: 425px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .wrapper {
+        padding: 1rem;
+    }
+
+    .process-form button {
+        width: 100%;
+    }
+}
