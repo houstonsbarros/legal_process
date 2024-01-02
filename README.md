@@ -1,66 +1,96 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<h3 align="center">
+    <img alt="Logo" title="#logo" width="300px" src="https://github.com/houstonsbarros/legal_process/assets/107281650/2c6b32ea-e4ff-40e7-9641-ed0a1d74c2f1">
+</h3>
+<h1 align="center">Sistema Jurídico</h1>
+<h3 align="center">Projeto desenvolvido para a disciplina de Programação Web II do curso de Análise e Desenvolvimento de Sistemas do IFPI - Campus Parnaíba. O projeto consiste em um sistema de gerenciamento de processos jurídicos.
+</h3>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Índice
 
-## About Laravel
+-   [Índice](#índice)
+-   [Documentação](#documentação)
+    -   [:rocket: Tecnologias:](#rocket-tecnologias)
+    -   [:briefcase: Arquitetura e Design Patterns:](#briefcase-arquitetura-e-design-patterns)
+    -   [:books: Ferramentas e componentes:](#books-ferramentas-e-componentes)
+-   [Resultado](#resultado)
+-   [Baixar o projeto](#baixar-o-projeto)
+-   [Configuração](#configuração)
+-   [Inicialização](#inicialização)
+-   [Login](#login)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Documentação
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### :rocket: Tecnologias:
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+-   [PHP](https://www.php.net/)
+-   [Laravel](https://laravel.com/)
 
-## Learning Laravel
+### :briefcase: Arquitetura e Design Patterns:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+-   [MVC](https://pt.wikipedia.org/wiki/MVC)
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### :books: Ferramentas e componentes:
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+-   [Laravel Permission](https://spatie.be/docs/laravel-permission/v6/introduction)
 
-## Laravel Sponsors
+## Resultado
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+-   [Clique aqui para ver o resultado](https://legal-process.fly.dev)
 
-### Premium Partners
+## Baixar o projeto
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+Primeiro passo, clonar o projeto:
 
-## Contributing
+```bash
+# Clonar
+git clone https://github.com/houstonsbarros/legal_process.git
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+# Acessar
+cd legal_process
+```
 
-## Code of Conduct
+## Configuração
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+```bash
+# Instalar dependências do projeto
+composer install
 
-## Security Vulnerabilities
+# Copiar o arquivo .env.example para .env
+cp .env.example .env
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+# Gerar a chave da aplicação
+php artisan key:generate
 
-## License
+# Criar as migrations (tabelas e Seeders)
+php artisan migrate --seed
+```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Inicialização
+
+```bash
+# Para rodar o projeto
+php artisan serve
+```
+
+## Login
+
+O usuário de teste do advogado é:
+
+```
+email:    advogado@teste.com
+senha: 123456
+```
+
+O usuário de teste do juiz é:
+
+```
+email: juiz@teste.com
+senha: 123456
+```
+
+---
+
+<h4 align="center">
+    Feito com ❤ por <a href="https://www.linkedin.com/in/houston-barros/" target="_blank">Houston Barros</a>!
+    <g-emoji class="g-emoji" alias="wave" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f44b.png">👋</g-emoji>
+</h4>

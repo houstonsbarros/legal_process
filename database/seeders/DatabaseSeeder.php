@@ -14,5 +14,6 @@ class DatabaseSeeder extends Seeder
     {
         app(RoleAndPermissionsSeeder::class)->run();
         app(UsersSeeder::class)->run();
+        app(ProcessesSeeder::class)->run();
     }
 }
