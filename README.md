@@ -90,6 +90,10 @@ senha: 123456
 
 ---
 
+# Diagrama de Entidade e Relacionamento (DER)
+
+![DER](https://github.com/houstonsbarros/legal_process/assets/107281650/731b4f1a-6de2-4cad-ac5a-b463722a10c3)
+
 <h4 align="center">
     Feito com ❤ por <a href="https://www.linkedin.com/in/houston-barros/" target="_blank">Houston Barros</a>!
     <g-emoji class="g-emoji" alias="wave" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f44b.png">👋</g-emoji>
