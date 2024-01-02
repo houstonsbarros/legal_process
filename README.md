@@ -17,6 +17,7 @@
 -   [Configuração](#configuração)
 -   [Inicialização](#inicialização)
 -   [Login](#login)
+-   [Diagrama de Entidade e Relacionamento (DER)] (#diagrama-de-entidade-e-relacionamento-(der)
 
 ## Documentação
 
@@ -88,7 +89,7 @@ email: juiz@teste.com
 senha: 123456
 ```
 
-# Diagrama de Entidade e Relacionamento (DER)
+## Diagrama de Entidade e Relacionamento (DER)
 
 ![DER](https://github.com/houstonsbarros/legal_process/assets/107281650/731b4f1a-6de2-4cad-ac5a-b463722a10c3)
 
