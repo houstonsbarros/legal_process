@@ -17,7 +17,7 @@
 -   [Configuração](#configuração)
 -   [Inicialização](#inicialização)
 -   [Login](#login)
--   [Diagrama de Entidade e Relacionamento (DER)] (#diagrama-de-entidade-e-relacionamento-(der)
+- [Diagrama de Entidade e Relacionamento (DER)](#diagrama-de-entidade-e-relacionamento-der)
 
 ## Documentação
 
