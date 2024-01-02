@@ -35,7 +35,7 @@
 
 ## Resultado
 
--   [Clique aqui para ver o resultado](https://legal-process.fly.dev)
+-   [Clique aqui para ver o resultado](https://legalprocess.fly.dev)
 
 ## Baixar o projeto
 
